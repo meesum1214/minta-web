@@ -2,13 +2,15 @@ import { Burger, Drawer, Image } from "@mantine/core"
 import Btn from "./Btn"
 import { useState } from "react"
 import { GrClose } from "react-icons/gr";
+import { useRouter } from "next/router";
 
 export default () => {
 
     const [opened, setOpened] = useState(false)
+    const router = useRouter()
 
     return (
-        <div className="p-3 flex justify-between items-center w-full border-b">
+        <div className="sticky top-0 z-10 p-3 flex justify-between items-center w-full bg-white border-b">
             <Image
                 src="/logo.png"
                 alt="Logo"
@@ -30,11 +32,11 @@ export default () => {
                     </div>
 
                     <div className="p-8 text-sm font-semibold">
-                        <div className="mb-4">HOME</div>
-                        <div className="mb-4">COURSES</div>
-                        <div className="mb-4">OUR TEAM</div>
-                        <div className="mb-4">ABOUT US</div>
-                        <div className="mb-4">CONTACT US</div>
+                        <div className="mb-4" onClick={() => { router.push('/'); setOpened(false) }}>HOME</div>
+                        <div className="mb-4" onClick={() => { router.push('/courses'); setOpened(false) }}>COURSES</div>
+                        <div className="mb-4" onClick={() => { router.push('/our-team'); setOpened(false) }}>OUR TEAM</div>
+                        <div className="mb-4" onClick={() => { router.push('/about-us'); setOpened(false) }}>ABOUT US</div>
+                        <div className="mb-4" onClick={() => { router.push('/contact-us'); setOpened(false) }}>CONTACT US</div>
                     </div>
                 </Drawer>
             </div>

@@ -4,7 +4,7 @@ import HeroSection from "@/layout/Screens/Home/HeroSection";
 
 export default function Home() {
   return (
-    <main className="">
+    <main>
       <HeroSection />
       <CourseCategories />
       <AnnouncedCourses />
