@@ -2,7 +2,7 @@ import { Image } from "@mantine/core"
 
 export default ({ img, title }) => {
     return (
-        <div className="w-[280px] h-[400px] bg-white rounded-xl shadow-2xl cursor-pointer">
+        <div className="w-[280px] h-[400px] bg-white rounded-xl shadow-3xl cursor-pointer">
             <Image
                 src={img}
                 alt="Announced Course"

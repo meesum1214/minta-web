@@ -5,7 +5,39 @@ import { Divider } from '@mantine/core'
 
 export default () => (
     <div className='bg-secondary'>
-        <div className="text-white py-12 px-8">
+        {/* For Web */}
+        <div className='flex justify-center'>
+            <div className="max-w-[1200px] w-full md:flex hidden justify-between text-white py-12 px-8">
+
+                <div className=''>
+                    <div className="text-2xl font-bold text-gray-300 mb-2">Pages</div>
+                    <div className="text-gray-300 mb-4">Home</div>
+                    <div className="text-gray-300 mb-4">Courses</div>
+                    <div className="text-gray-300 mb-4">Our Team</div>
+                    <div className="text-gray-300">About Us</div>
+                </div>
+
+                <div className=''>
+                    <div className="text-2xl font-bold text-gray-300 mb-4">Contact</div>
+                    <div className="text-gray-300 mb-4">Headquater Office - Manchester - UK</div>
+                    <div className="text-gray-300 mb-4">+447791646536</div>
+                    <div className="text-gray-300">info@minta.uk</div>
+                </div>
+
+                <div>
+                    <div className="w-full text-[28px] font-bold text-gray-300">Connect With Us</div>
+
+                    <div className='flex mt-2 mb-4'>
+                        <a href='#' target='_blank' className='rounded-lg cursor-pointer mr-2 bg-gray-800 w-10 h-10 flex justify-center items-center'><RiFacebookFill className='text-white' size={25} /></a>
+                        <a href='#' target='_blank' className='rounded-lg cursor-pointer mr-2 bg-gray-800 w-10 h-10 flex justify-center items-center'><GrInstagram className='text-white' size={25} /></a>
+                        <a href='#' target='_blank' className='rounded-lg cursor-pointer mr-2 bg-gray-800 w-10 h-10 flex justify-center items-center'><BsYoutube className='text-white' size={25} /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {/* For Mobile */}
+        <div className="md:hidden text-white py-12 px-8">
             <div className="w-full text-[28px] font-bold text-gray-300">Connect With Us</div>
 
             <div className='flex mt-2 mb-4'>
